@@ -33,7 +33,7 @@ typedef struct MemoryRegion
 /*The data structure helps to keep the recently used memoryIds.
 Sorted or arranged always based on "most recently used" to "least recently used"
 */
-MemoryRegion recent_used_memory_regions[5] = {{-1, -1, -1, -1, -1}};
+MemoryRegion recent_used_memory_regions[5] = {-1, -1, -1, -1, -1};
 
 MemoryRegion *find(int memory_region_id)
 {
